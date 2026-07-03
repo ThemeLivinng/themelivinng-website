@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Livinng Interiors — Luxury Interior Design Studio | Noida</title>
+<meta name="description" content="Theme Livinng Interiors is a luxury interior design studio in Noida, creating bespoke residential, hospitality, corporate and retail spaces. Serving clients across India.">
+<link rel="canonical" href="https://themelivinng.com/index.html">
+<link rel="icon" type="image/png" href="images/logo-golden.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Theme Livinng Interiors — Luxury Interior Design Studio | Noida">
+<meta property="og:description" content="Luxury interior design studio in Noida creating bespoke residential, hospitality, corporate and retail spaces. Serving clients across India.">
+<meta property="og:image" content="https://themelivinng.com/images/logo-golden.png">
+<meta property="og:url" content="https://themelivinng.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Theme Livinng Interiors",
+  "image":"https://themelivinng.com/images/logo-golden.png",
+  "description":"Luxury interior design studio in Noida creating bespoke residential, hospitality, corporate and retail spaces. Serving clients across India.",
+  "url":"https://themelivinng.com/",
+  "email":"tlinteriors11@gmail.com",
+  "telephone":"+91-98734-66057",
+  "address":{"@type":"PostalAddress","addressLocality":"Noida","addressRegion":"Uttar Pradesh","addressCountry":"IN"},
+  "areaServed":"IN",
+  "priceRange":"₹₹₹",
+  "sameAs":["https://www.instagram.com/theme_living_interiors"]
+}
+</script>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919873466057" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- STICKY MOBILE CTA -->
+<a href="contact.html" class="mobile-cta-bar">Begin a Project →</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/GOLDEN HORIZONTAL.png" alt="Theme Livinng Interiors" class="logo-horizontal">
+    <img src="images/GOLDEN VERTICAL.png" alt="Theme Livinng Interiors" class="logo-vertical">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Begin a Project</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation();lightboxNav(-1)">&#8592;</button>
+  <div class="lightbox-img-wrap" onclick="event.stopPropagation()">
+    <img id="lightboxImg" src="" alt="">
+  </div>
+  <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation();lightboxNav(1)">&#8594;</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- GALLERY MODAL -->
+<div class="gallery-modal" id="galleryModal" onclick="closeGallery()">
+  <div class="gallery-modal-header" onclick="event.stopPropagation()">
+    <div><h2 id="galleryTitle"></h2><p id="gallerySubtitle">Selected Projects</p></div>
+    <button class="gallery-close" onclick="closeGallery()">✕</button>
+  </div>
+  <div class="gallery-images" id="galleryImages"></div>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;">
+  <h1 class="sr-only">Theme Livinng Interiors — Luxury Interior Design Studio in Noida, Serving Clients Across India</h1>
+  <div class="hero-bg"><img src="images/Home page image 2.jpg" alt="Luxury interior designed by Theme Livinng Interiors"></div>
+</section>
+
+<!-- BRAND INTRO -->
+<section class="brand-intro fade-in" style="padding:0;">
+  <div class="brand-intro-img">
+    <img src="images/Brand ntro (Below Hero).jpeg" alt="Theme Livinng Interiors design detail">
+  </div>
+  <div class="brand-intro-text">
+    <p class="section-tag">About the Studio</p>
+    <h2 class="section-heading">Design that <em>Endures.</em><br>Spaces that Inspire.</h2>
+    <div class="gold-rule"></div>
+    <p class="section-text">Founded with a passion for timeless design and refined living, Theme Livinng Interiors is a luxury interior design studio creating bespoke spaces that embody elegance, sophistication, and individuality.</p>
+    <p class="section-text" style="margin-top:1.2rem;">With a meticulous eye for detail and a deep understanding of modern luxury, we craft interiors that feel exclusive, effortless, and deeply personal.</p>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="featured-projects fade-in">
+  <div class="featured-header">
+    <div>
+      <p class="section-tag">Selected Work</p>
+      <h2 class="section-heading">Projects That<br><em>Define Our Craft.</em></h2>
+    </div>
+    <a href="portfolio.html" class="btn-outline" style="align-self:center;">View All Projects</a>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card" onclick="location.href='portfolio.html?cat=apartments'">
+      <img src="images/luxury-residences-thumbnail.jpeg" alt="Luxury Residences">
+      <div class="project-overlay"><p class="project-label">Luxury Residences</p><h3 class="project-name">Luxury Residences</h3></div>
+    </div>
+    <div class="project-card" onclick="location.href='portfolio.html?cat=hospitality'">
+      <img src="images/hospitality-thumbnail.jpeg" alt="Hospitality & Dining">
+      <div class="project-overlay"><p class="project-label">Hospitality & Dining</p><h3 class="project-name">Hospitality & Dining</h3></div>
+    </div>
+    <div class="project-card" onclick="location.href='portfolio.html?cat=offices'">
+      <img src="images/Directors Cabin 2.jpg" alt="Corporate & Workplace">
+      <div class="project-overlay"><p class="project-label">Corporate</p><h3 class="project-name">Corporate & Workplace</h3></div>
+    </div>
+    <div class="project-card" onclick="location.href='portfolio.html?cat=commercial'">
+      <img src="images/retail-lifestyle-thumbnail.jpeg" alt="Retail & Lifestyle">
+      <div class="project-overlay"><p class="project-label">Retail & Lifestyle</p><h3 class="project-name">Retail & Lifestyle</h3></div>
+    </div>
+    <div class="project-card" onclick="location.href='portfolio.html?cat=landscape'">
+      <img src="images/landscape-1.jpg" alt="Landscape & Outdoor Living">
+      <div class="project-overlay"><p class="project-label">Outdoor</p><h3 class="project-name">Landscape & Outdoor Living</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-overview fade-in">
+  <div class="services-overview-header">
+    <p class="section-tag">What We Offer</p>
+    <h2 class="section-heading">Full-Spectrum<br><em>Design Services.</em></h2>
+    <p class="section-text">Every aspect of your space, handled with precision and artistry — from initial concept to final reveal.</p>
+  </div>
+  <div class="services-overview-body">
+    <div class="services-grid">
+      <div class="service-item fade-in"><div class="service-num">01</div><div class="service-name">Space Planning & Layout</div><p class="service-desc">Thoughtful spatial arrangement that maximises flow, function, and the poetry of proportion.</p></div>
+      <div class="service-item fade-in"><div class="service-num">02</div><div class="service-name">Concept Design & Styling</div><p class="service-desc">A cohesive design language that speaks to your personality — curated, layered, unmistakably yours.</p></div>
+      <div class="service-item fade-in"><div class="service-num">03</div><div class="service-name">2D Technical Drawings</div><p class="service-desc">Precise AutoCAD documentation ensuring flawless execution by every craftsman on site.</p></div>
+      <div class="service-item fade-in"><div class="service-num">04</div><div class="service-name">3D Visualisation</div><p class="service-desc">Photo-realistic renders that let you inhabit your space before a single wall is touched.</p></div>
+      <div class="service-item fade-in"><div class="service-num">05</div><div class="service-name">Material & Finish Guidance</div><p class="service-desc">Expert guidance on material selections, surface finishes, and design specifications.</p></div>
+      <div class="service-item fade-in"><div class="service-num">06</div><div class="service-name">Site Supervision & Coordination</div><p class="service-desc">Periodic site presence to ensure the work progresses in line with the design intent.</p></div>
+      <div class="service-item fade-in"><div class="service-num">07</div><div class="service-name">Vendor & Market Assistance</div><p class="service-desc">Access to our trusted network of suppliers and vendors for material exploration and procurement.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials fade-in">
+  <div class="testimonials-header">
+    <p class="section-tag" style="justify-content:center;"><span style="width:24px;height:1px;background:var(--gold);display:inline-block;margin-right:1rem;"></span>Client Words</p>
+    <h2 class="section-heading">Spaces That<br><em>Speak for Themselves.</em></h2>
+  </div>
+  <div class="testimonials-carousel">
+    <div class="testimonials-track-wrap">
+      <div class="testimonials-grid" id="testimonialsTrack">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Theme Livinng Interiors turned our house into a home we genuinely enjoy coming back to every day. The design is beautiful, practical, and exactly what we had envisioned."</p>
+          <p class="testimonial-author">Sunil Singh · Noida</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Theme Livinng Interiors perfectly captured the charm and warmth we wanted for our homestay. The space feels inviting, comfortable, and beautifully connected to the surroundings. Our guests often compliment the interiors during their stay."</p>
+          <p class="testimonial-author">Jitender Kumar · Mity Homestay, Himachal Pradesh</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Since the renovation of my salon, we've received countless compliments on the interiors. The team made the most of the available space and the salon feels modern, inviting, and beautifully designed."</p>
+          <p class="testimonial-author">Varsha Singh · Pin Pin Salon, Noida</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Theme Livinng Interiors created a home that is very thoughtfully designed and welcoming. Every space has been designed with care, and the result is something we're proud of."</p>
+          <p class="testimonial-author">Aanchal Sharma · Chandigarh</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"They understood the vibe we wanted for our Cafe and brought it to life beautifully. The space feels unique, stylish, and welcoming."</p>
+          <p class="testimonial-author">Ankit Garg · Spoons and Chopsticks, Noida</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Theme Livinng Interiors did not just design our home — they gave it a soul. Every corner is thoughtful. Every material, considered. We have never felt more at home."</p>
+          <p class="testimonial-author">Raghunandan Johri · Delhi</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Designing a villa requires a different level of thought and detail, and Theme Livinng Interiors delivered exceptionally well. Every space feels luxurious yet comfortable."</p>
+          <p class="testimonial-author">Sagar Gupta · Delhi</p>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">"Theme Livinng Interiors created a workspace that strikes the perfect balance between aesthetics and functionality. We would happily recommend them."</p>
+          <p class="testimonial-author">Sagar Maheshwari · DSM & Associates, Ghaziabad</p>
+        </div>
+      </div>
+    </div>
+    <button class="t-nav t-nav-prev" id="tPrev" onclick="testimonialSlide(-1)">&#8592;</button>
+    <button class="t-nav t-nav-next" id="tNext" onclick="testimonialSlide(1)">&#8594;</button>
+    <div class="t-mobile-nav">
+      <button class="t-nav-mob" id="tPrevMob" onclick="testimonialSlide(-1)">&#8592;</button>
+      <button class="t-nav-mob" id="tNextMob" onclick="testimonialSlide(1)">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <p class="section-tag" style="justify-content:center;"><span style="width:24px;height:1px;background:var(--gold);display:inline-block;margin-right:1rem;"></span>Ready to Begin?</p>
+  <h2 class="section-heading">Your Most Beautiful<br><em>Space Awaits.</em></h2>
+  <p class="section-text">We accept a select number of residential and commercial projects each year. Enquire early to secure your consultation.</p>
+  <div class="cta-actions" style="margin-top:3rem;">
+    <a href="https://wa.me/919873466057?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20an%20interior%20design%20project." class="btn-wa" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chat on WhatsApp
+    </a>
+    <a href="contact.html" class="btn-outline">Send an Enquiry</a>
+  </div>
+  <form class="inquiry-form" onsubmit="handleHomeForm(event)">
+    <div class="form-row">
+      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name" required></div>
+      <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000" required></div>
+    </div>
+    <div class="form-group"><label>Project Type</label>
+      <select><option value="">Select project type</option><option>Luxury Residences</option><option>Hospitality & Dining</option><option>Corporate & Workplace</option><option>Retail & Lifestyle</option></select>
+    </div>
+    <div class="form-group"><label>Tell us about your vision</label><textarea placeholder="Share details about your space, timeline, and aspirations..."></textarea></div>
+    <button type="submit" class="form-submit" id="homeSubmitBtn">Submit Enquiry →</button>
+    <p id="homeFormSuccess" style="display:none;text-align:center;margin-top:1.2rem;font-family:var(--serif);font-style:italic;color:var(--gold-light);font-size:1rem;">Thank you! We will be in touch with you shortly.</p>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo"><img src="images/logo-golden.png" alt="Theme Livinng Interiors" class="footer-logo-h"><img src="images/GOLDEN VERTICAL.png" alt="Theme Livinng Interiors" class="footer-logo-v"></div>
+      <p class="footer-tagline">Crafting luxury living environments for those who understand that beauty is not excess — it is precision.</p>
+    </div>
+    <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul><li><a href="mailto:tlinteriors11@gmail.com">tlinteriors11@gmail.com</a></li><li><span style="font-family:var(--sans);font-size:0.78rem;color:var(--muted);">+91 98734 66057</span></li><li><a href="https://www.instagram.com/theme_living_interiors" target="_blank">@theme_living_interiors</a></li><li><a href="https://wa.me/919873466057" target="_blank" style="display:flex;align-items:center;gap:0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp Us</a></li></ul></div>
+    <div class="footer-col"><h4>We Serve</h4><ul><li><span style="font-family:var(--sans);font-size:0.78rem;color:var(--muted);">Pan India</span></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Theme Livinng Interiors. All rights reserved.</p>
+    <p class="footer-copy">The Bespoke Design Studio</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
