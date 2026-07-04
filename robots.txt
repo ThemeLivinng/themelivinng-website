@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://themelivinng.com/sitemap.xml
+Sitemap: https://themelivinginteriors.com/sitemap.xml

@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us — Theme Livinng Interiors | Luxury Interior Design Studio</title>
 <meta name="description" content="Get in touch with Theme Livinng Interiors. Based in Noida, serving clients across India. Call, email, or send us an enquiry to begin your interior design project.">
-<link rel="canonical" href="https://themelivinng.com/contact.html">
+<link rel="canonical" href="https://themelivinginteriors.com/contact.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/logo-golden.png">
+<link rel="apple-touch-icon" href="images/logo-golden.png">
+<meta name="theme-color" content="#0D0B09">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact Us — Theme Livinng Interiors | Luxury Interior Design Studio">
 <meta property="og:description" content="Get in touch with Theme Livinng Interiors. Based in Noida, serving clients across India. Call, email, or send us an enquiry to begin your interior design project.">
-<meta property="og:image" content="https://themelivinng.com/images/logo-golden.png">
-<meta property="og:url" content="https://themelivinng.com/contact.html">
+<meta property="og:image" content="https://themelivinginteriors.com/images/logo-golden.png">
+<meta property="og:url" content="https://themelivinginteriors.com/contact.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
@@ -21,8 +23,8 @@
   "@context":"https://schema.org",
   "@type":"BreadcrumbList",
   "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://themelivinng.com/"},
-    {"@type":"ListItem","position":2,"name":"Contact","item":"https://themelivinng.com/contact.html"}
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://themelivinginteriors.com/"},
+    {"@type":"ListItem","position":2,"name":"Contact","item":"https://themelivinginteriors.com/contact.html"}
   ]
 }
 </script>
@@ -97,16 +99,16 @@
     <h3>Send an Enquiry</h3>
     <form class="contact-form" onsubmit="handleForm(event)">
       <div class="form-row">
-        <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name" required></div>
-        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Your last name"></div>
+        <div class="form-group"><label for="c-first">First Name</label><input id="c-first" name="first-name" type="text" placeholder="Your first name" required></div>
+        <div class="form-group"><label for="c-last">Last Name</label><input id="c-last" name="last-name" type="text" placeholder="Your last name"></div>
       </div>
-      <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
-      <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000"></div>
-      <div class="form-group"><label>Project Type</label>
-        <select><option value="">Select project type</option><option>Luxury Residences</option><option>Hospitality & Dining</option><option>Corporate & Workplace</option><option>Retail & Lifestyle</option></select>
+      <div class="form-group"><label for="c-email">Email Address</label><input id="c-email" name="email" type="email" placeholder="your@email.com" required></div>
+      <div class="form-group"><label for="c-phone">Phone Number</label><input id="c-phone" name="phone" type="tel" placeholder="+91 00000 00000"></div>
+      <div class="form-group"><label for="c-type">Project Type</label>
+        <select id="c-type" name="project-type"><option value="">Select project type</option><option>Luxury Residences</option><option>Hospitality & Dining</option><option>Corporate & Workplace</option><option>Retail & Lifestyle</option></select>
       </div>
-      <div class="form-group"><label>Location</label><input type="text" placeholder="Delhi / Noida / Gurugram / Other"></div>
-      <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your space, approximate area, timeline, and what you are hoping to achieve..."></textarea></div>
+      <div class="form-group"><label for="c-location">Location</label><input id="c-location" name="location" type="text" placeholder="Delhi / Noida / Gurugram / Other"></div>
+      <div class="form-group"><label for="c-details">Project Details</label><textarea id="c-details" name="details" placeholder="Tell us about your space, approximate area, timeline, and what you are hoping to achieve..."></textarea></div>
       <button type="submit" class="form-submit">Send Enquiry →</button>
     </form>
   </div>

@@ -178,11 +178,21 @@ function testimonialGoTo(idx){
 function testimonialSlide(dir){testimonialGoTo(tCurrent+dir);}
 window.addEventListener('resize',()=>testimonialGoTo(0));
 
+/* ─── KEYBOARD ACCESS FOR CATEGORY CARDS ─── */
+function initCardKeyboard(){
+  document.querySelectorAll('.category-card[role="button"]').forEach(card=>{
+    card.addEventListener('keydown',(e)=>{
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();card.click();}
+    });
+  });
+}
+
 /* ─── INIT ─── */
 document.addEventListener('DOMContentLoaded',()=>{
   initFadeIns();
   initTestimonialCarousel();
   initLineAnimations();
+  initCardKeyboard();
   // Auto-open a gallery on portfolio page if ?cat= is present
   const params=new URLSearchParams(location.search);
   const cat=params.get('cat');

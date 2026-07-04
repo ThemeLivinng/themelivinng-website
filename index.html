@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Theme Livinng Interiors — Luxury Interior Design Studio | Noida</title>
 <meta name="description" content="Theme Livinng Interiors is a luxury interior design studio in Noida, creating bespoke residential, hospitality, corporate and retail spaces. Serving clients across India.">
-<link rel="canonical" href="https://themelivinng.com/index.html">
+<link rel="canonical" href="https://themelivinginteriors.com/">
 <link rel="icon" type="image/png" href="images/logo-golden.png">
+<link rel="apple-touch-icon" href="images/logo-golden.png">
+<meta name="theme-color" content="#0D0B09">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Theme Livinng Interiors — Luxury Interior Design Studio | Noida">
 <meta property="og:description" content="Luxury interior design studio in Noida creating bespoke residential, hospitality, corporate and retail spaces. Serving clients across India.">
-<meta property="og:image" content="https://themelivinng.com/images/logo-golden.png">
-<meta property="og:url" content="https://themelivinng.com/">
+<meta property="og:image" content="https://themelivinginteriors.com/images/logo-golden.png">
+<meta property="og:url" content="https://themelivinginteriors.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -21,9 +23,9 @@
   "@context":"https://schema.org",
   "@type":"LocalBusiness",
   "name":"Theme Livinng Interiors",
-  "image":"https://themelivinng.com/images/logo-golden.png",
+  "image":"https://themelivinginteriors.com/images/logo-golden.png",
   "description":"Luxury interior design studio in Noida creating bespoke residential, hospitality, corporate and retail spaces. Serving clients across India.",
-  "url":"https://themelivinng.com/",
+  "url":"https://themelivinginteriors.com/",
   "email":"tlinteriors11@gmail.com",
   "telephone":"+91-98734-66057",
   "address":{"@type":"PostalAddress","addressLocality":"Noida","addressRegion":"Uttar Pradesh","addressCountry":"IN"},
@@ -98,7 +100,7 @@
 <!-- BRAND INTRO -->
 <section class="brand-intro fade-in" style="padding:0;">
   <div class="brand-intro-img">
-    <img src="images/Brand ntro (Below Hero).jpeg" alt="Theme Livinng Interiors design detail">
+    <img loading="lazy" src="images/Brand ntro (Below Hero).jpeg" alt="Theme Livinng Interiors design detail">
   </div>
   <div class="brand-intro-text">
     <p class="section-tag">About the Studio</p>
@@ -119,26 +121,26 @@
     <a href="portfolio.html" class="btn-outline" style="align-self:center;">View All Projects</a>
   </div>
   <div class="projects-grid">
-    <div class="project-card" onclick="location.href='portfolio.html?cat=apartments'">
-      <img src="images/luxury-residences-thumbnail.jpeg" alt="Luxury Residences">
+    <a class="project-card" href="portfolio.html?cat=apartments" aria-label="View Luxury Residences projects">
+      <img loading="lazy" src="images/luxury-residences-thumbnail.jpeg" alt="Luxury Residences">
       <div class="project-overlay"><p class="project-label">Luxury Residences</p><h3 class="project-name">Luxury Residences</h3></div>
-    </div>
-    <div class="project-card" onclick="location.href='portfolio.html?cat=hospitality'">
-      <img src="images/hospitality-thumbnail.jpeg" alt="Hospitality & Dining">
+    </a>
+    <a class="project-card" href="portfolio.html?cat=hospitality" aria-label="View Hospitality and Dining projects">
+      <img loading="lazy" src="images/hospitality-thumbnail.jpeg" alt="Hospitality & Dining">
       <div class="project-overlay"><p class="project-label">Hospitality & Dining</p><h3 class="project-name">Hospitality & Dining</h3></div>
-    </div>
-    <div class="project-card" onclick="location.href='portfolio.html?cat=offices'">
-      <img src="images/Directors Cabin 2.jpg" alt="Corporate & Workplace">
+    </a>
+    <a class="project-card" href="portfolio.html?cat=offices" aria-label="View Corporate and Workplace projects">
+      <img loading="lazy" src="images/Directors Cabin 2.jpg" alt="Corporate & Workplace">
       <div class="project-overlay"><p class="project-label">Corporate</p><h3 class="project-name">Corporate & Workplace</h3></div>
-    </div>
-    <div class="project-card" onclick="location.href='portfolio.html?cat=commercial'">
-      <img src="images/retail-lifestyle-thumbnail.jpeg" alt="Retail & Lifestyle">
+    </a>
+    <a class="project-card" href="portfolio.html?cat=commercial" aria-label="View Retail and Lifestyle projects">
+      <img loading="lazy" src="images/retail-lifestyle-thumbnail.jpeg" alt="Retail & Lifestyle">
       <div class="project-overlay"><p class="project-label">Retail & Lifestyle</p><h3 class="project-name">Retail & Lifestyle</h3></div>
-    </div>
-    <div class="project-card" onclick="location.href='portfolio.html?cat=landscape'">
-      <img src="images/landscape-1.jpg" alt="Landscape & Outdoor Living">
+    </a>
+    <a class="project-card" href="portfolio.html?cat=landscape" aria-label="View Landscape and Outdoor Living projects">
+      <img loading="lazy" src="images/landscape-1.jpg" alt="Landscape & Outdoor Living">
       <div class="project-overlay"><p class="project-label">Outdoor</p><h3 class="project-name">Landscape & Outdoor Living</h3></div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -236,13 +238,13 @@
   </div>
   <form class="inquiry-form" onsubmit="handleHomeForm(event)">
     <div class="form-row">
-      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name" required></div>
-      <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000" required></div>
+      <div class="form-group"><label for="h-name">Your Name</label><input id="h-name" name="name" type="text" placeholder="Full name" required></div>
+      <div class="form-group"><label for="h-phone">Phone Number</label><input id="h-phone" name="phone" type="tel" placeholder="+91 00000 00000" required></div>
     </div>
-    <div class="form-group"><label>Project Type</label>
-      <select><option value="">Select project type</option><option>Luxury Residences</option><option>Hospitality & Dining</option><option>Corporate & Workplace</option><option>Retail & Lifestyle</option></select>
+    <div class="form-group"><label for="h-type">Project Type</label>
+      <select id="h-type" name="project-type"><option value="">Select project type</option><option>Luxury Residences</option><option>Hospitality & Dining</option><option>Corporate & Workplace</option><option>Retail & Lifestyle</option></select>
     </div>
-    <div class="form-group"><label>Tell us about your vision</label><textarea placeholder="Share details about your space, timeline, and aspirations..."></textarea></div>
+    <div class="form-group"><label for="h-vision">Tell us about your vision</label><textarea id="h-vision" name="vision" placeholder="Share details about your space, timeline, and aspirations..."></textarea></div>
     <button type="submit" class="form-submit" id="homeSubmitBtn">Submit Enquiry →</button>
     <p id="homeFormSuccess" style="display:none;text-align:center;margin-top:1.2rem;font-family:var(--serif);font-style:italic;color:var(--gold-light);font-size:1rem;">Thank you! We will be in touch with you shortly.</p>
   </form>
