@@ -20,7 +20,16 @@ function openGallery(cat){
     grid.querySelectorAll('.gallery-img-wrap').forEach((wrap,i)=>{
       const handler=(e)=>{e.stopPropagation();openLightbox(data.images[i]);};
       wrap.addEventListener('click',handler);
-      wrap.addEventListener('touchend',(e)=>{e.preventDefault();handler(e);},{passive:false});
+      let touchStartX=0,touchStartY=0;
+      wrap.addEventListener('touchstart',(e)=>{
+        touchStartX=e.touches[0].clientX;
+        touchStartY=e.touches[0].clientY;
+      },{passive:true});
+      wrap.addEventListener('touchend',(e)=>{
+        const dx=Math.abs(e.changedTouches[0].clientX-touchStartX);
+        const dy=Math.abs(e.changedTouches[0].clientY-touchStartY);
+        if(dx<10&&dy<10){e.preventDefault();handler(e);}
+      },{passive:false});
     });
   }
   document.getElementById('galleryModal').classList.add('open');
