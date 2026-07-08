@@ -152,16 +152,28 @@ document.addEventListener('keydown',(e)=>{
   if(e.key==='ArrowLeft')lightboxNav(-1);
 });
 
-/* ─── LIGHTBOX SWIPE ─── */
+/* ─── LIGHTBOX TAP-TO-CLOSE + SWIPE-TO-NAVIGATE ─── */
 (function(){
   const lb=document.getElementById('lightbox');
   if(!lb)return;
-  let touchStartX=0;
-  lb.addEventListener('touchstart',(e)=>{touchStartX=e.touches[0].clientX;},{passive:true});
-  lb.addEventListener('touchend',(e)=>{
-    const diff=touchStartX-e.changedTouches[0].clientX;
-    if(Math.abs(diff)>50){lightboxNav(diff>0?1:-1);}
+  let touchStartX=0,touchStartY=0;
+  lb.addEventListener('touchstart',(e)=>{
+    touchStartX=e.touches[0].clientX;
+    touchStartY=e.touches[0].clientY;
   },{passive:true});
+  lb.addEventListener('touchend',(e)=>{
+    if(e.target.closest('.lightbox-nav, .lightbox-close'))return;
+    const dx=e.changedTouches[0].clientX-touchStartX;
+    const dy=e.changedTouches[0].clientY-touchStartY;
+    const absDx=Math.abs(dx),absDy=Math.abs(dy);
+    if(absDx>50&&absDx>absDy){
+      e.preventDefault();
+      lightboxNav(dx<0?1:-1);
+    }else if(absDx<10&&absDy<10){
+      e.preventDefault();
+      closeLightbox();
+    }
+  },{passive:false});
 })();
 
 /* ─── TESTIMONIAL CAROUSEL ─── */
